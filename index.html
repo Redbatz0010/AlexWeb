@@ -4,227 +4,128 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alexander Taotao | Portfolio</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
-/* Google Fonts for modern look */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  background: #f5f6fa;
-  color: #333;
-  line-height: 1.6;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f5f6fa;
+    color: #333;
 }
 
-/* Container */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
+h1, h2, h3 {
+    color: #1e40af;
 }
 
-/* Header */
-.header {
-  text-align: center;
-  margin-bottom: 40px;
+.subtitle {
+    color: #6b7280;
 }
 
-.header h1 {
-  font-size: 42px;
-  color: #1e40af;
-  margin-bottom: 10px;
-}
-
-.header .subtitle {
-  color: #6b7280;
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.header p {
-  font-size: 16px;
-  color: #4b5563;
-}
-
-/* Card */
 .card {
-  background: white;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  margin-bottom: 30px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
-}
-
-/* Section Titles */
-.card h2 {
-  color: #1e40af;
-  margin-bottom: 20px;
-  font-size: 26px;
-  border-bottom: 2px solid #e0e7ff;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* Skills Grid */
-.skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 12px;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
 .skill {
-  background: #eef2ff;
-  color: #1e40af;
-  padding: 10px 15px;
-  border-radius: 12px;
-  font-weight: 600;
-  text-align: center;
-  transition: background 0.3s ease;
+    background: #eef2ff;
+    color: #1e40af;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: background 0.3s ease;
 }
 
 .skill:hover {
-  background: #c7d2fe;
+    background: #c7d2fe;
 }
 
-/* Projects */
-.project {
-  margin-bottom: 20px;
+.btn-custom {
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.project h3 {
-  color: #2563eb;
-  font-size: 20px;
-  margin-bottom: 6px;
-}
-
-.project p {
-  color: #4b5563;
-  font-size: 15px;
-}
-
-/* Contact */
-.contact {
-  text-align: center;
-}
-
-.contact p {
-  margin: 8px 0;
-  color: #4b5563;
-}
-
-.contact button {
-  background: #2563eb;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.contact button:hover {
-  background: #1d4ed8;
-  transform: translateY(-2px);
-}
-
-/* Links Styling */
-.contact a {
-  text-decoration: none;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 36px;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  .card h2 {
-    font-size: 22px;
-  }
-
-  .project h3 {
-    font-size: 18px;
-  }
+.btn-custom:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
 }
 </style>
 </head>
-
 <body>
-<div class="container">
 
-  <!-- Header -->
-  <div class="header">
-    <h1>Alexander Taotao</h1>
-    <p class="subtitle">QA Engineer | Manual Tester | Web Developer</p>
-    <p>Building reliable systems and user‑friendly web experiences.</p>
-  </div>
+<div class="container py-5">
 
-  <!-- About -->
-  <div class="card">
-    <h2>About Me</h2>
-    <p>
-      QA Engineer and Web Developer with experience in manual testing, bug tracking, and front‑end web development. Focused on improving software quality and building responsive web interfaces.
-    </p>
-  </div>
-
-  <!-- Skills -->
-  <div class="card">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">Manual Testing</div>
-      <div class="skill">Test Case Creation</div>
-      <div class="skill">Bug Tracking (Jira)</div>
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Responsive Design</div>
-      <div class="skill">Web UI Design</div>
-    </div>
-  </div>
-
-  <!-- Projects -->
-  <div class="card">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Electronic Appointment System</h3>
-      <p>Admin dashboard used to manage and monitor client appointment requests efficiently.</p>
+    <!-- Header -->
+    <div class="text-center mb-5">
+        <h1>Alexander Taotao</h1>
+        <p class="subtitle fs-5">QA Engineer | Manual Tester | Web Developer</p>
+        <p>Building reliable systems and user‑friendly web experiences.</p>
     </div>
 
-    <div class="project">
-      <h3>Electronic Certified True Copy (E‑CTC)</h3>
-      <p>Online platform for requesting certified true copy documents that reduced client waiting time from 2.5 hours to 30 minutes.</p>
+    <!-- About Me -->
+    <div class="card mb-4 p-4">
+        <h2>About Me</h2>
+        <p>
+            QA Engineer and Web Developer with experience in manual testing, bug tracking, and front‑end web development.
+            Focused on improving software quality and building responsive web interfaces.
+        </p>
     </div>
 
-  </div>
+    <!-- Skills -->
+    <div class="card mb-4 p-4">
+        <h2>Skills</h2>
+        <div class="row g-3 mt-2">
+            <div class="col-6 col-md-3"><div class="skill">Manual Testing</div></div>
+            <div class="col-6 col-md-3"><div class="skill">Test Case Creation</div></div>
+            <div class="col-6 col-md-3"><div class="skill">Bug Tracking (Jira)</div></div>
+            <div class="col-6 col-md-3"><div class="skill">HTML</div></div>
+            <div class="col-6 col-md-3"><div class="skill">CSS</div></div>
+            <div class="col-6 col-md-3"><div class="skill">JavaScript</div></div>
+            <div class="col-6 col-md-3"><div class="skill">Responsive Design</div></div>
+            <div class="col-6 col-md-3"><div class="skill">Web UI Design</div></div>
+        </div>
+    </div>
 
-  <!-- Contact -->
-  <div class="card contact">
-    <h2>Contact</h2>
-    <p>Email: Alexandertaotao2000@gmail.com</p>
-    <p>GitHub | LinkedIn</p>
-    <a href="https://getshared.com/d/iCkLrspH" download>
-      <button>Download Resume</button>
-    </a>
-  </div>
+    <!-- Projects -->
+    <div class="card mb-4 p-4">
+        <h2>Projects</h2>
+        <div class="mb-3">
+            <h3>Electronic Appointment System</h3>
+            <p>Admin dashboard used to manage and monitor client appointment requests efficiently.</p>
+        </div>
+        <div class="mb-3">
+            <h3>Electronic Certified True Copy (E‑CTC)</h3>
+            <p>Online platform for requesting certified true copy documents that reduced client waiting time from 2.5 hours to 30 minutes.</p>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="card p-4 text-center">
+        <h2>Contact</h2>
+        <p>Email: Alexandertaotao2000@gmail.com</p>
+        <p>GitHub | LinkedIn</p>
+        <a href="https://getshared.com/d/iCkLrspH" download>
+            <button class="btn btn-custom mt-3">Download Resume</button>
+        </a>
+    </div>
 
 </div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
