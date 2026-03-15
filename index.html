@@ -5,127 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alexander Taotao | Portfolio</title>
 
-<!-- Bootstrap CSS -->
+<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Google Fonts -->
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-<style>
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
 
-body{
-    font-family:'Inter', Arial, sans-serif;
-    background:#f5f6fa;
-    color:#333;
-    position:relative;
-}
-
-/* Background Aesthetic Design */
-
-.background-design{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    z-index:-1;
-}
-
-.shape{
-    position:absolute;
-    border-radius:20px;
-    opacity:0.25;
-    filter:blur(40px);
-}
-
-.shape1{
-    width:300px;
-    height:300px;
-    background:#3b82f6;
-    top:10%;
-    left:5%;
-}
-
-.shape2{
-    width:250px;
-    height:250px;
-    background:#6366f1;
-    bottom:10%;
-    right:10%;
-}
-
-.shape3{
-    width:200px;
-    height:200px;
-    background:#a5b4fc;
-    top:50%;
-    left:40%;
-}
-
-.shape4{
-    width:180px;
-    height:180px;
-    background:#93c5fd;
-    bottom:30%;
-    left:15%;
-}
-
-/* Typography */
-
-h1,h2,h3{
-    color:#1e40af;
-}
-
-.subtitle{
-    color:#6b7280;
-}
-
-/* Cards */
-
-.card{
-    border-radius:16px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
-    transition:transform .3s ease, box-shadow .3s ease;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 25px rgba(0,0,0,0.12);
-}
-
-/* Skills */
-
-.skill{
-    background:#eef2ff;
-    color:#1e40af;
-    font-weight:600;
-    padding:10px 15px;
-    border-radius:12px;
-    text-align:center;
-    transition:background .3s ease;
-}
-
-.skill:hover{
-    background:#c7d2fe;
-}
-
-/* Button */
-
-.btn-custom{
-    background:#2563eb;
-    color:white;
-    font-weight:600;
-    border-radius:12px;
-    transition:background .3s ease, transform .2s ease;
-}
-
-.btn-custom:hover{
-    background:#1d4ed8;
-    transform:translateY(-2px);
-}
-
-</style>
 </head>
 
 <body>
@@ -141,7 +29,6 @@ h1,h2,h3{
 <div class="container py-5">
 
 <!-- Header -->
-
 <div class="text-center mb-5">
 <h1>Alexander Taotao</h1>
 <p class="subtitle fs-5">QA Engineer | Manual Tester | Web Developer</p>
@@ -149,7 +36,6 @@ h1,h2,h3{
 </div>
 
 <!-- About -->
-
 <div class="card mb-4 p-4">
 <h2>About Me</h2>
 <p>
@@ -160,49 +46,24 @@ building responsive web interfaces.
 </div>
 
 <!-- Skills -->
-
 <div class="card mb-4 p-4">
 <h2>Skills</h2>
 
 <div class="row g-3 mt-2">
 
-<div class="col-6 col-md-3">
-<div class="skill">Manual Testing</div>
-</div>
-
-<div class="col-6 col-md-3">
-<div class="skill">Test Case Creation</div>
-</div>
-
-<div class="col-6 col-md-3">
-<div class="skill">Bug Tracking (Jira)</div>
-</div>
-
-<div class="col-6 col-md-3">
-<div class="skill">HTML</div>
-</div>
-
-<div class="col-6 col-md-3">
-<div class="skill">CSS</div>
-</div>
-
-<div class="col-6 col-md-3">
-<div class="skill">JavaScript</div>
-</div>
-
-<div class="col-6 col-md-3">
-<div class="skill">Responsive Design</div>
-</div>
-
-<div class="col-6 col-md-3">
-<div class="skill">Web UI Design</div>
-</div>
+<div class="col-6 col-md-3"><div class="skill">Manual Testing</div></div>
+<div class="col-6 col-md-3"><div class="skill">Test Case Creation</div></div>
+<div class="col-6 col-md-3"><div class="skill">Bug Tracking (Jira)</div></div>
+<div class="col-6 col-md-3"><div class="skill">HTML</div></div>
+<div class="col-6 col-md-3"><div class="skill">CSS</div></div>
+<div class="col-6 col-md-3"><div class="skill">JavaScript</div></div>
+<div class="col-6 col-md-3"><div class="skill">Responsive Design</div></div>
+<div class="col-6 col-md-3"><div class="skill">Web UI Design</div></div>
 
 </div>
 </div>
 
 <!-- Projects -->
-
 <div class="card mb-4 p-4">
 
 <h2>Projects</h2>
@@ -226,7 +87,6 @@ that reduced client waiting time from 2.5 hours to 30 minutes.
 </div>
 
 <!-- Contact -->
-
 <div class="card p-4 text-center">
 
 <h2>Contact</h2>
@@ -243,102 +103,7 @@ that reduced client waiting time from 2.5 hours to 30 minutes.
 </div>
 
 <!-- Bootstrap JS -->
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
-</html>    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-}
-
-.skill {
-    background: #eef2ff;
-    color: #1e40af;
-    font-weight: 600;
-    padding: 10px 15px;
-    border-radius: 12px;
-    text-align: center;
-    transition: background 0.3s ease;
-}
-
-.skill:hover {
-    background: #c7d2fe;
-}
-
-.btn-custom {
-    background: #2563eb;
-    color: white;
-    font-weight: 600;
-    border-radius: 12px;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.btn-custom:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-}
-</style>
-</head>
-<body>
-
-<div class="container py-5">
-
-    <!-- Header -->
-    <div class="text-center mb-5">
-        <h1>Alexander Taotao</h1>
-        <p class="subtitle fs-5">QA Engineer | Manual Tester | Web Developer</p>
-        <p>Building reliable systems and user‑friendly web experiences.</p>
-    </div>
-
-    <!-- About Me -->
-    <div class="card mb-4 p-4">
-        <h2>About Me</h2>
-        <p>
-            QA Engineer and Web Developer with experience in manual testing, bug tracking, and front‑end web development.
-            Focused on improving software quality and building responsive web interfaces.
-        </p>
-    </div>
-
-    <!-- Skills -->
-    <div class="card mb-4 p-4">
-        <h2>Skills</h2>
-        <div class="row g-3 mt-2">
-            <div class="col-6 col-md-3"><div class="skill">Manual Testing</div></div>
-            <div class="col-6 col-md-3"><div class="skill">Test Case Creation</div></div>
-            <div class="col-6 col-md-3"><div class="skill">Bug Tracking (Jira)</div></div>
-            <div class="col-6 col-md-3"><div class="skill">HTML</div></div>
-            <div class="col-6 col-md-3"><div class="skill">CSS</div></div>
-            <div class="col-6 col-md-3"><div class="skill">JavaScript</div></div>
-            <div class="col-6 col-md-3"><div class="skill">Responsive Design</div></div>
-            <div class="col-6 col-md-3"><div class="skill">Web UI Design</div></div>
-        </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="card mb-4 p-4">
-        <h2>Projects</h2>
-        <div class="mb-3">
-            <h3>Electronic Appointment System</h3>
-            <p>Admin dashboard used to manage and monitor client appointment requests efficiently.</p>
-        </div>
-        <div class="mb-3">
-            <h3>Electronic Certified True Copy (E‑CTC)</h3>
-            <p>Online platform for requesting certified true copy documents that reduced client waiting time from 2.5 hours to 30 minutes.</p>
-        </div>
-    </div>
-
-    <!-- Contact -->
-    <div class="card p-4 text-center">
-        <h2>Contact</h2>
-        <p>Email: Alexandertaotao2000@gmail.com</p>
-        <p>GitHub | LinkedIn</p>
-        <a href="https://getshared.com/d/iCkLrspH" download>
-            <button class="btn btn-custom mt-3">Download Resume</button>
-        </a>
-    </div>
-
-</div>
-
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
